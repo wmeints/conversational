@@ -1,0 +1,47 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**/*"
+
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - "docs/**/*"
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Restore Node Modules
+        run: npm install
+        working-directory: src/ConversationalWorkshop/ClientApp
+        env:
+          FONTAWESOME_NPM_TOKEN: ${{ secrets.FONTAWESOME_NPM_TOKEN }}
+      - name: Restore .NET Packages
+        run: dotnet restore
+      - name: Build web app
+        run: dotnet publish src/ConversationalWorkshop/ConversationalWorkshop.csproj --no-restore -o dist/webapp -c Release
+      - name: Test web app
+        run: dotnet test test/ConversationalWorkshop.Tests/ConversationalWorkshop.Tests.csproj --no-restore
+      - name: Test frontend
+        run: npm test
+        working-directory: src/ConversationalWorkshop/ClientApp
+      - name: Publish web app artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: webapp
+          path: dist/webapp
