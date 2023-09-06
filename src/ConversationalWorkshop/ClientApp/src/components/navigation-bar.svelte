@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-light">
+<nav class="navbar navbar-expand-lg bg-light shadow-sm mb-4">
 	<div class="container">
 		<a href="/" class="navbar-brand">APW</a>
 		<button
