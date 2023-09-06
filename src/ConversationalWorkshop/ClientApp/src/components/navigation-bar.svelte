@@ -36,6 +36,7 @@
 						</li>
 					</ul>
 				</li>
+				<li class="nav-item"><a href="/resources" class="nav-link">Resources</a></li>
 			</ul>
 		</div>
 	</div>
