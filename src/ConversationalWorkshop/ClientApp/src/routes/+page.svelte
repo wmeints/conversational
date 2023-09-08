@@ -1,4 +1,6 @@
 <div class="container">
-	<h1>Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+	<div class="col">
+		<h1>Welcome!</h1>
+		<p>Jump straight into the workshop. <a href="/exercises/01-prompt-design/">exercise 1</a>.</p>
+	</div>
 </div>
