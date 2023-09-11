@@ -1,5 +1,4 @@
 name: CI Pipeline
-
 on:
   push:
     branches: [main]
@@ -10,12 +9,10 @@ on:
     branches: [main]
     paths-ignore:
       - "docs/**/*"
-
 jobs:
   build:
     name: Build and test
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: Setup .NET
@@ -45,3 +42,21 @@ jobs:
         with:
           name: webapp
           path: dist/webapp
+  deploy:
+    name: Deploy to staging
+    runs-on: ubuntu-latest
+    needs: build
+    environment: Staging
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: webapp
+          path: dist/webapp
+      - name: Deploy artifact to Azure
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: web-conversational-dev
+          publish-profile: ${{ secrets.PUBLISHING_PROFILE }}
+          package: dist/webapp
+          slot-name: staging
