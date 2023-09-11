@@ -2,6 +2,9 @@ using ConversationalWorkshop.Models;
 using ConversationalWorkshop.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAzureOpenAI(builder.Configuration);
+
 var app = builder.Build();
 
 app.MapPost("/api/completion", async (CompletionRequest request, ILanguageService languageService) =>
