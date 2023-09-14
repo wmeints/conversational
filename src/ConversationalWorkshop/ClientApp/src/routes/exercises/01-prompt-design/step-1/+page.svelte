@@ -1,3 +1,10 @@
+<script lang="ts">
+	import PromptDesigner from '$components/prompt-designer.svelte';
+</script>
+
+<svelte:head>
+	<title>Exercise 1 - Step 1 - APE workshop</title>
+</svelte:head>
 <div class="container">
 	<div class="nav">
 		<ol class="breadcrumb">
@@ -20,8 +27,9 @@
 				In this first step, we're going to ask ChatGPT a basic question and see what sort of
 				response it generates.
 			</p>
-			<p>
-				<a href="/exercises/01-prompt-design/step-2" class="btn btn-primary">Move on to step 2</a>
+			<PromptDesigner />
+			<p class="mt-4">
+				<a href="/exercises/01-prompt-design/step-2">Move on to step 2</a>
 			</p>
 		</div>
 	</div>

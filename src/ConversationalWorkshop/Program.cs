@@ -4,6 +4,7 @@ using ConversationalWorkshop.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAzureOpenAI(builder.Configuration);
+builder.Services.AddScoped<ILanguageService, LanguageService>();
 
 var app = builder.Build();
 

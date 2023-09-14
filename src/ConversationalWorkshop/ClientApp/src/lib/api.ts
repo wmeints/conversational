@@ -1,5 +1,5 @@
-async function complete(prompt: string): Promise<string> {
-  const response = await fetch('/api/chat', {
+export async function complete(prompt: string): Promise<string> {
+  const response = await fetch('/api/completion', {
     method: 'POST',
     body: JSON.stringify({ prompt }),
     headers: {
