@@ -1,3 +1,7 @@
+<script>
+	import PromptDesigner from '$components/prompt-designer.svelte';
+</script>
+
 <div class="container">
 	<div class="nav">
 		<ol class="breadcrumb">
@@ -32,6 +36,7 @@
 				generative AI in marketing
 			</li>
 		</ul>
+		<PromptDesigner />
 		<p>
 			<a href="/exercises/02-few-shot-learning/" class="btn btn-primary"
 				>Continue with the second exercise</a
