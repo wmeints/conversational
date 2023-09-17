@@ -30,6 +30,7 @@ public class LanguageService : ILanguageService
         requestOptions.PresencePenalty = 0.0f;
         requestOptions.NucleusSamplingFactor = 0.95f;
 
+        requestOptions.Messages.Add(new ChatMessage(ChatRole.System, "You're playing the role of AI assistant. People can ask you to generate useful content."));
         requestOptions.Messages.Add(new ChatMessage(ChatRole.User, prompt));
 
         try
