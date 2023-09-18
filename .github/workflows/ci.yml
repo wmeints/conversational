@@ -28,7 +28,7 @@ jobs:
         with:
           version: 8
       - name: Restore Node Modules
-        run: npm install
+        run: pnpm install
         working-directory: src/ConversationalWorkshop/ClientApp
         env:
           FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
