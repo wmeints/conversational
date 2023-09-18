@@ -11,7 +11,7 @@ const config = {
       $components: 'src/components'
     },
     adapter: adapter({
-      fallback: 'app.html'
+      fallback: 'index.html'
     })
   }
 };
