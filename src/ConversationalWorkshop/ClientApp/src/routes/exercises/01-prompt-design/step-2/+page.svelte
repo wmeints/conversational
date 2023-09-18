@@ -38,7 +38,7 @@
 		</ul>
 		<PromptDesigner />
 		<p>
-			<a href="/exercises/02-few-shot-learning/" class="btn btn-primary"
+			<a href="/exercises/02-few-shot-learning/" class="mt-4"
 				>Continue with the second exercise</a
 			>
 		</p>
