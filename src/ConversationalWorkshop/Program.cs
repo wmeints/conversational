@@ -8,6 +8,9 @@ builder.Services.AddScoped<ILanguageService, LanguageService>();
 
 var app = builder.Build();
 
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 app.MapPost("/api/completion", async (CompletionRequest request, ILanguageService languageService) =>
 {
     var result = await languageService.GetResponseAsync(request.Prompt);
