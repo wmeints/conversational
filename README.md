@@ -32,19 +32,10 @@ required packages.
 
 ### Application structure
 
-```text
-├─── src
-│    ├─── routes                    Defines the routes for the application
-│    │    └─── exercises            Defines the location for the excerises
-│    │         ├─── exercise-01
-│    │         ├─── exercise-02
-│    │         ├─── exercise-03
-│    │         └─── exercise-04
-│    ├─── lib                       Contains shared logic
-│    └─── components                Contains shared components
-├─── static                         Contains static HTML/CSS/Images
-└─── tests                          Contains the unit-tests for the application
-```
+This application is made out of two parts:
+
+1. ASP.NET Core application, this hosts the frontend and implements the interface to the LLM.
+2. SvelteKit application located in `ClientApp`, this hosts the frontend.
 
 ### Privacy
 
