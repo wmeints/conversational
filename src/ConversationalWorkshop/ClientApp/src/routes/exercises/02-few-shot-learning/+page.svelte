@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PromptDesigner from '$components/prompt-designer.svelte';
-	import { samples, prompt, response, fewshotInput, type Sample } from '$lib/store';
+	import { samples, response, fewshotInput, type Sample } from '$lib/store';
 
 	function addSample() {
 		$samples = [...$samples, { text: '', tags: '' }];
