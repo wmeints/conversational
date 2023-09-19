@@ -13,7 +13,8 @@ need to deploy the contents of this repository.
 
 ## Deployment
 
-TODO: Explain how to set up your own deployment pipeline.
+You can deploy this application to an Azure Web App. Please refer to [.github/workflows/ci.yml](https://github.com/wmeints/conversational/blob/main/.github/workflows/ci.yml)
+for a sample on how to set up your own deployment pipeline for the application.
 
 ## Development
 
