@@ -18,9 +18,13 @@ for a sample on how to set up your own deployment pipeline for the application.
 
 ## Development
 
-For local development, you're going to need to get yourself a pro license for [Fontawesome](https://fontawesome.com).
-Set the `FONTAWESOME_NPM_AUTH_TOKEN` environment variable with your personal access token so you're able to install the
-required packages.
+You'll need to get two pieces of software to work on the code:
+
+- [.NET](https://dot.net)
+- [Node](https://nodejs.org)
+- [PNPM](https://pnpm.io/)
+
+The code can be edited in any modern code editor.
 
 ## Documentation
 
