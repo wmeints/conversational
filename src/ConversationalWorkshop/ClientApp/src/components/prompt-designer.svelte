@@ -3,17 +3,20 @@
 	import ErrorIndicator from '$components/error-indicator.svelte';
 	import LoadingIndicator from '$components/loading-indicator.svelte';
 	import { complete } from '$lib/api';
-	import { prompt, response } from '$lib/store';
+	import type { Writable } from 'svelte/store';
 
 	let isLoading: boolean = false;
 	let isFailed: boolean = false;
+
+	export let prompt: string;
+	export let response: string | null = null;
 
 	async function submitPrompt() {
 		try {
 			isFailed = false;
 			isLoading = true;
-			$response = await complete($prompt);
-			$prompt = '';
+			response = await complete(prompt);
+			prompt = '';
 		} catch (e) {
 			isLoading = false;
 			isFailed = true;
@@ -21,8 +24,8 @@
 	}
 
 	function resetPrompt() {
-		$prompt = '';
-		$response = '';
+		prompt = '';
+		response = '';
 		isFailed = false;
 		isLoading = false;
 	}
@@ -35,7 +38,7 @@
 			class="form-control"
 			id="prompt"
 			rows="10"
-			bind:value={$prompt}
+			bind:value={prompt}
 			data-testid="prompt-textarea"
 		/>
 	</div>
@@ -64,5 +67,5 @@
 	</div>
 </form>
 {#if response}
-	<ModelResponse content={$response} />
+	<ModelResponse content={response} />
 {/if}

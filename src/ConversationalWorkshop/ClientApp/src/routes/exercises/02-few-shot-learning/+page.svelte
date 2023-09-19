@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { samples, response, fewshotInput, type Sample } from '$lib/store';
+	import PromptDesigner from '$components/prompt-designer.svelte';
+	import { samples, prompt, response, fewshotInput, type Sample } from '$lib/store';
 
 	function addSample() {
 		$samples = [...$samples, { text: '', tags: '' }];
@@ -46,14 +47,16 @@
 		{#each $samples as sample, index}
 			<div class="card mb-3">
 				<div class="card-body">
-					<label class="label">Post content</label>
+					<label class="label" for={`prompt-${index}`}>Post content</label>
 					<textarea
+						id={`prompt-${index}`}
 						value={sample.text}
 						class="form-control mb-3"
 						placeholder="Enter the LinkedIn post content here."
 					/>
-					<label>Tags</label>
+					<label for={`tags-${index}`}>Tags</label>
 					<input
+						id={`tags-${index}`}
 						type="text"
 						class="form-control mb-3"
 						value={sample.tags}
@@ -76,6 +79,13 @@
 			Now that we've collected the samples, and the article, we can create the prompt. For your
 			convenience we've created the prompt for you based on what you entered above.
 		</p>
-		<textarea class="form-control mb-3" value={$fewshotInput} rows="15" />
+		<p>Note the structure of the prompt. It consists of three parts:</p>
+		<ul>
+			<li>An introduction to the task</li>
+			<li>Context information for the model to learn from</li>
+			<li>The task that the model needs to perform</li>
+		</ul>
+		<p>Press send to submit the prompt!</p>
+		<PromptDesigner prompt={$fewshotInput} />
 	</div>
 </div>

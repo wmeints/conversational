@@ -1,5 +1,6 @@
 <script>
 	import PromptDesigner from '$components/prompt-designer.svelte';
+	import { prompt, response } from '$lib/store';
 </script>
 
 <div class="container">
@@ -36,11 +37,9 @@
 				generative AI in marketing
 			</li>
 		</ul>
-		<PromptDesigner />
+		<PromptDesigner bind:prompt={$prompt} bind:response={$response} />
 		<p>
-			<a href="/exercises/02-few-shot-learning/" class="mt-4"
-				>Continue with the second exercise</a
-			>
+			<a href="/exercises/02-few-shot-learning/" class="mt-4">Continue with the second exercise</a>
 		</p>
 	</div>
 </div>

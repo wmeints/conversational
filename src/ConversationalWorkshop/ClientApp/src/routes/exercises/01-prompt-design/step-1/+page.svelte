@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PromptDesigner from '$components/prompt-designer.svelte';
+	import { prompt, response } from '$lib/store';
 </script>
 
 <svelte:head>
@@ -27,7 +28,7 @@
 				In this first step, we're going to ask ChatGPT a basic question and see what sort of
 				response it generates.
 			</p>
-			<PromptDesigner />
+			<PromptDesigner prompt={$prompt} response={$response} />
 			<p class="mt-4">
 				<a href="/exercises/01-prompt-design/step-2">Move on to step 2</a>
 			</p>
