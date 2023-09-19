@@ -19,14 +19,15 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
         with:
           version: 8
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
       - name: Restore Node Modules
         run: pnpm install
         working-directory: src/ConversationalWorkshop/ClientApp
