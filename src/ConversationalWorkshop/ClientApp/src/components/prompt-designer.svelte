@@ -16,6 +16,7 @@
 			isLoading = true;
 			response = await complete(prompt);
 			prompt = '';
+			isLoading = false;
 		} catch (e) {
 			isLoading = false;
 			isFailed = true;
