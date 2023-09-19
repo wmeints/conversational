@@ -25,7 +25,8 @@
 			<h1>Exercise 1: Prompt design - Step 1</h1>
 			<p>
 				In this first step, we're going to ask ChatGPT a basic question and see what sort of
-				response it generates.
+				response it generates. Let's start by asking the model to write an article that outlines the
+				benefits of using generative AI.
 			</p>
 			<PromptDesigner bind:prompt={$prompt} bind:response={$response} />
 			<p class="mt-4">
