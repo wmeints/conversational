@@ -52,7 +52,7 @@
 					<label class="label" for={`prompt-${index}`}>Post content</label>
 					<textarea
 						id={`prompt-${index}`}
-						value={sample.text}
+						bind:value={sample.text}
 						class="form-control mb-3"
 						placeholder="Enter the LinkedIn post content here."
 					/>
@@ -61,7 +61,7 @@
 						id={`tags-${index}`}
 						type="text"
 						class="form-control mb-3"
-						value={sample.tags}
+						bind:value={sample.tags}
 						placeholder="Enter the tags here. Separate tags with a comma."
 					/>
 					<button class="btn btn-outline-secondary" on:click={() => removeSample(index)}
