@@ -74,7 +74,7 @@
 
 		<h2 class="mt-2">Step 2: Enter your content</h2>
 		<p>Please enter the text of your article.</p>
-		<textarea class="form-control mb-3" value={$response} rows="15" />
+		<textarea class="form-control mb-3" bind:value={$response} rows="15" />
 
 		<h2>Final prompt</h2>
 		<p>
@@ -83,7 +83,7 @@
 		</p>
 		<p>Note the structure of the prompt. It consists of three parts:</p>
 		<ul>
-			<li>An introduction to the task</li>
+			<li>An introduction</li>
 			<li>Context information for the model to learn from</li>
 			<li>The task that the model needs to perform</li>
 		</ul>
