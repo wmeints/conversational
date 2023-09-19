@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light shadow-sm mb-4">
 	<div class="container">
-		<a href="/" class="navbar-brand"><i class="fa-regular fa-robot" /> Prompt engineering</a>
+		<a href="/" class="navbar-brand">Prompt engineering</a>
 		<button
 			class="navbar-toggler"
 			type="button"
