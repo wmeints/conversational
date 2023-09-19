@@ -30,6 +30,7 @@ The code can be edited in any modern code editor.
 
 ### Used technology
 
+- [.NET 7.0](https://dot.net)
 - [Svelte kit](https://kit.svelte.dev/)
 - [OpenAI ChatGPT 3.5 Turbo](https://openai.com/)
 
