@@ -5,6 +5,6 @@ import NavigationBar from './navigation-bar.svelte';
 describe('NavigationBar', () => {
   it('should render', () => {
     render(NavigationBar);
-    expect(screen.getByText('APE')).not.toBeNull();
+    expect(screen.getByText('Prompt engineering')).not.toBeNull();
   });
 });
