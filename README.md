@@ -4,9 +4,7 @@ Practice your prompt engineering skills without writing any code! This applicati
 started with using Large Language Models.
 
 - Discover how to change the style and structure of the model output
-- Learn how to modify the base instructions for the model
 - Use few-shot learning to help improve model performance
-- Include external data to get better answers from the model
 
 ## Getting started
 
