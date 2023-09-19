@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: 'pnpm'
       - name: Restore Node Modules
         run: pnpm install
         working-directory: src/ConversationalWorkshop/ClientApp
