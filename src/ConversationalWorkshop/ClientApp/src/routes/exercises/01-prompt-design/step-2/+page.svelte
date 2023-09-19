@@ -1,6 +1,8 @@
 <script>
 	import PromptDesigner from '$components/prompt-designer.svelte';
-	import { prompt, response } from '$lib/store';
+	import { prompt, response, title } from '$lib/store';
+
+	$title = 'Exercise 1: Prompt design - Step 2';
 </script>
 
 <div class="container">

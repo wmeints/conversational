@@ -1,3 +1,9 @@
+<script>
+	import { title } from '$lib/store';
+
+	$title = 'Exercises';
+</script>
+
 <div class="container">
 	<div class="nav">
 		<ol class="breadcrumb">

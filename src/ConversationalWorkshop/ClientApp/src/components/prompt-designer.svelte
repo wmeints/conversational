@@ -3,7 +3,6 @@
 	import ErrorIndicator from '$components/error-indicator.svelte';
 	import LoadingIndicator from '$components/loading-indicator.svelte';
 	import { complete } from '$lib/api';
-	import type { Writable } from 'svelte/store';
 
 	let isLoading: boolean = false;
 	let isFailed: boolean = false;

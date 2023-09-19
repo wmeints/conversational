@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PromptDesigner from '$components/prompt-designer.svelte';
-	import { samples, response, fewshotInput, type Sample } from '$lib/store';
+	import { samples, response, fewshotInput, title } from '$lib/store';
 
 	function addSample() {
 		$samples = [...$samples, { text: '', tags: '' }];
@@ -9,6 +9,8 @@
 	function removeSample(index: number) {
 		$samples = $samples.filter((_, i) => i !== index);
 	}
+
+	$title = 'Exercise 2: Few-shot learning';
 </script>
 
 <div class="container">

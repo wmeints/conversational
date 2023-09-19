@@ -1,3 +1,9 @@
+<script>
+	import { title } from '$lib/store';
+
+	$title = 'Home';
+</script>
+
 <div class="container">
 	<div class="col">
 		<h1>Welcome!</h1>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light shadow-sm mb-4">
 	<div class="container">
-		<a href="/" class="navbar-brand"><i class="fa-regular fa-robot" /> APE</a>
+		<a href="/" class="navbar-brand"><i class="fa-regular fa-robot" /> Prompt engineering</a>
 		<button
 			class="navbar-toggler"
 			type="button"
@@ -30,14 +30,8 @@
 								>2. Few shot learning</a
 							>
 						</li>
-						<li>
-							<a href="/exercises/03-use-organization-data/" class="dropdown-item"
-								>3. Use organization data</a
-							>
-						</li>
 					</ul>
 				</li>
-				<li class="nav-item"><a href="/resources" class="nav-link">Resources</a></li>
 			</ul>
 		</div>
 	</div>
