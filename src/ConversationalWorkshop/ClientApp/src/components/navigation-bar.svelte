@@ -25,11 +25,11 @@
 						<li>
 							<a href="/exercises/01-prompt-design/" class="dropdown-item">1. Prompt design</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="/exercises/02-few-shot-learning/" class="dropdown-item"
 								>2. Few shot learning</a
 							>
-						</li>
+						</li> -->
 					</ul>
 				</li>
 			</ul>

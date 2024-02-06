@@ -21,27 +21,34 @@
 </div>
 <div class="container">
 	<div class="col">
-		<h1>Exercise 1: Prompt design - Step 2</h1>
+		<h1>Oefening 1: Prompt design - Stap 2</h1>
 		<p>
-			In the previous step we designed a basic prompt. The answer is rather dissapointing. Let's try
-			a few things to improve it.
+			In de vorige stap hebben we een basisprompt ontworpen. Het antwoord is goed, maar kan nog
+			beter. Laten we een paar dingen proberen om het te verbeteren.
 		</p>
 		<p>
-			Change the following aspects of your prompt, and see how it improves. Make sure to generate a
-			response after each change.
+			Wijzig de volgende onderdelen van jouw prompt en kijk hoe het resultaat beter wordt. Zorg
+			ervoor dat je een reactie krijgt na elke wijziging.
 		</p>
 		<ul>
-			<li>Let ChatGPT play a role, for example, let it play the role of marketeer.</li>
-			<li>Change the style, tell ChatGPT to make a compelling argument.</li>
-			<li>Do you prefer long or short? Tell ChatGPT you want it in 200 words or 2 sentences.</li>
+			<li>Laat ChatGPT een rol spelen, bijvoorbeeld de rol van hele onhandige kok.</li>
+			<li>Geef voorkeur aan een bepaalde keuken, bijvoorbeeld: chinees.</li>
 			<li>
-				Change it up completely! Ask ChatGPT to give you a bullet list of reasons why you should use
-				generative AI in marketing
+				Zorg voor bepaalde instructies of eisen, bijvoorbeeld: het moet in 15 minuten klaar zijn.
 			</li>
+			<li>
+				Verander de schrijfstijl, laat ChatGPT een recept genereren door straattaal te gebruiken.
+			</li>
+			<li>Wil je een kort recept? Geef aan dat het slechts 100 woorden mag bevatten.</li>
 		</ul>
-		<PromptDesigner bind:prompt={$prompt} bind:response={$response} />
+
 		<p>
-			<a href="/exercises/02-few-shot-learning/" class="mt-4">Continue with the second exercise</a>
+			De mogelijkheden zijn eindeloos, kom zelf met ideeën om jouw recept beter te maken. Deel de
+			resultaten met andere studenten.
 		</p>
+		<PromptDesigner bind:prompt={$prompt} bind:response={$response} />
+		<!-- <p>
+			<a href="/exercises/02-few-shot-learning/" class="mt-4">Continue with the second exercise</a>
+		</p> -->
 	</div>
 </div>

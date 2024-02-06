@@ -13,12 +13,12 @@
 </div>
 <div class="container">
 	<div class="col">
-		<h1>Exercise 1: Prompt design</h1>
+		<h1>Oefening 1: Prompt design</h1>
 		<p>
-			In this exercise we're going to work on basic prompt design. We'll be designing a prompt that
-			will generate a small article explaining the benefits of using generative AI in marketing.
+			In deze opdracht ga je een recept ontwerpen met behulp van <b>ChatGPT</b>. Hiervoor stel je
+			een <b>"prompt"</b> samen. Een prompt is een vraag of instructie die je aan ChatGPT geeft om de
+			gewenste tekst te genereren.
 		</p>
-		<p>Let's get started!</p>
-		<a href="/exercises/01-prompt-design/step-1" class="btn btn-primary">Start with step 1</a>
+		<a href="/exercises/01-prompt-design/step-1" class="btn btn-primary">Start met stap 1</a>
 	</div>
 </div>

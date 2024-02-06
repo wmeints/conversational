@@ -22,15 +22,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<h1>Exercise 1: Prompt design - Step 1</h1>
+			<h1>Oefening 1: Het maken van een eerste Prompt</h1>
 			<p>
-				In this first step, we're going to ask ChatGPT a basic question and see what sort of
-				response it generates. Let's start by asking the model to write an article that outlines the
-				benefits of using generative AI.
+				Laten we beginnen door het model te vragen een stuk tekst te schrijven over een recept met
+				het thema 'Food of the future'.
 			</p>
+			<p>Bijvoorbeeld: Schrijf een recept over het thema 'Food of the future'?</p>
 			<PromptDesigner bind:prompt={$prompt} bind:response={$response} />
 			<p class="mt-4">
-				<a href="/exercises/01-prompt-design/step-2">Move on to step 2</a>
+				<a href="/exercises/01-prompt-design/step-2">Ga verder met stap 2</a>
 			</p>
 		</div>
 	</div>
