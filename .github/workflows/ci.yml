@@ -63,4 +63,3 @@ jobs:
           app-name: web-conversational-dev
           publish-profile: ${{ secrets.PUBLISHING_PROFILE }}
           package: dist/webapp
-          slot-name: staging
